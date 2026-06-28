@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    @Environment(\.scenePhase) private var scenePhase
     private let viewModel: HomeViewModel
 
     init(viewModel: HomeViewModel = HomeViewModel()) {
@@ -20,6 +21,9 @@ struct HomeView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(.systemBackground))
+        .onChange(of: scenePhase) { _, newPhase in
+            viewModel.scenePhaseDidChange(newPhase)
+        }
     }
 }
 

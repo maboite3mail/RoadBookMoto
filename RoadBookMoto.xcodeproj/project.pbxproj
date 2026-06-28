@@ -13,6 +13,8 @@
 		A11111111111111111111114 /* RoadBookEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21111111111111111111114 /* RoadBookEntry.swift */; };
 		A11111111111111111111117 /* NavigationLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21111111111111111111117 /* NavigationLauncher.swift */; };
 		A11111111111111111111118 /* WazeLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21111111111111111111118 /* WazeLauncher.swift */; };
+		A11111111111111111111119 /* AppLifecycleObserving.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21111111111111111111119 /* AppLifecycleObserving.swift */; };
+		A11111111111111111111120 /* AppLifecycleObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21111111111111111111120 /* AppLifecycleObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		A21111111111111111111115 /* RoadBookMoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadBookMoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A21111111111111111111117 /* NavigationLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLauncher.swift; sourceTree = "<group>"; };
 		A21111111111111111111118 /* WazeLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WazeLauncher.swift; sourceTree = "<group>"; };
+		A21111111111111111111119 /* AppLifecycleObserving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLifecycleObserving.swift; sourceTree = "<group>"; };
+		A21111111111111111111120 /* AppLifecycleObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLifecycleObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -32,7 +36,8 @@
 		A71111111111111111111111 /* Features */ = {isa = PBXGroup; children = (A91111111111111111111111 /* Home */, ); path = Features; sourceTree = "<group>"; };
 		A91111111111111111111111 /* Home */ = {isa = PBXGroup; children = (A21111111111111111111112 /* HomeView.swift */, A21111111111111111111113 /* HomeViewModel.swift */, ); path = Home; sourceTree = "<group>"; };
 		A81111111111111111111111 /* Models */ = {isa = PBXGroup; children = (A21111111111111111111114 /* RoadBookEntry.swift */, ); path = Models; sourceTree = "<group>"; };
-		A12111111111111111111111 /* Services */ = {isa = PBXGroup; children = (A21111111111111111111117 /* NavigationLauncher.swift */, A21111111111111111111118 /* WazeLauncher.swift */, ); path = Services; sourceTree = "<group>"; };
+		A12111111111111111111111 /* Services */ = {isa = PBXGroup; children = (A13111111111111111111111 /* Lifecycle */, A21111111111111111111117 /* NavigationLauncher.swift */, A21111111111111111111118 /* WazeLauncher.swift */, ); path = Services; sourceTree = "<group>"; };
+		A13111111111111111111111 /* Lifecycle */ = {isa = PBXGroup; children = (A21111111111111111111119 /* AppLifecycleObserving.swift */, A21111111111111111111120 /* AppLifecycleObserver.swift */, ); path = Lifecycle; sourceTree = "<group>"; };
 		A51111111111111111111111 /* Products */ = {isa = PBXGroup; children = (A21111111111111111111115 /* RoadBookMoto.app */, ); name = Products; sourceTree = "<group>"; };
 /* End PBXGroup section */
 
@@ -49,7 +54,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B41111111111111111111111 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A11111111111111111111111 /* RoadBookMotoApp.swift in Sources */, A11111111111111111111112 /* HomeView.swift in Sources */, A11111111111111111111113 /* HomeViewModel.swift in Sources */, A11111111111111111111114 /* RoadBookEntry.swift in Sources */, A11111111111111111111117 /* NavigationLauncher.swift in Sources */, A11111111111111111111118 /* WazeLauncher.swift in Sources */, ); runOnlyForDeploymentPostprocessing = 0; };
+		B41111111111111111111111 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A11111111111111111111111 /* RoadBookMotoApp.swift in Sources */, A11111111111111111111112 /* HomeView.swift in Sources */, A11111111111111111111113 /* HomeViewModel.swift in Sources */, A11111111111111111111114 /* RoadBookEntry.swift in Sources */, A11111111111111111111117 /* NavigationLauncher.swift in Sources */, A11111111111111111111118 /* WazeLauncher.swift in Sources */, A11111111111111111111119 /* AppLifecycleObserving.swift in Sources */, A11111111111111111111120 /* AppLifecycleObserver.swift in Sources */, ); runOnlyForDeploymentPostprocessing = 0; };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXFrameworksBuildPhase section */
