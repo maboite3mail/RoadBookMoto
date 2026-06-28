@@ -11,6 +11,8 @@
 		A11111111111111111111112 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21111111111111111111112 /* HomeView.swift */; };
 		A11111111111111111111113 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21111111111111111111113 /* HomeViewModel.swift */; };
 		A11111111111111111111114 /* RoadBookEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21111111111111111111114 /* RoadBookEntry.swift */; };
+		A11111111111111111111117 /* NavigationLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21111111111111111111117 /* NavigationLauncher.swift */; };
+		A11111111111111111111118 /* WazeLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21111111111111111111118 /* WazeLauncher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,15 +21,18 @@
 		A21111111111111111111113 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		A21111111111111111111114 /* RoadBookEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadBookEntry.swift; sourceTree = "<group>"; };
 		A21111111111111111111115 /* RoadBookMoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadBookMoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A21111111111111111111117 /* NavigationLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLauncher.swift; sourceTree = "<group>"; };
+		A21111111111111111111118 /* WazeLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WazeLauncher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		A31111111111111111111111 = {isa = PBXGroup; children = (A41111111111111111111111 /* RoadBookMoto */, A51111111111111111111111 /* Products */, ); sourceTree = "<group>"; };
-		A41111111111111111111111 /* RoadBookMoto */ = {isa = PBXGroup; children = (A61111111111111111111111 /* App */, A71111111111111111111111 /* Features */, A81111111111111111111111 /* Models */, ); path = RoadBookMoto; sourceTree = "<group>"; };
+		A41111111111111111111111 /* RoadBookMoto */ = {isa = PBXGroup; children = (A61111111111111111111111 /* App */, A71111111111111111111111 /* Features */, A81111111111111111111111 /* Models */, A12111111111111111111111 /* Services */, ); path = RoadBookMoto; sourceTree = "<group>"; };
 		A61111111111111111111111 /* App */ = {isa = PBXGroup; children = (A21111111111111111111111 /* RoadBookMotoApp.swift */, ); path = App; sourceTree = "<group>"; };
 		A71111111111111111111111 /* Features */ = {isa = PBXGroup; children = (A91111111111111111111111 /* Home */, ); path = Features; sourceTree = "<group>"; };
 		A91111111111111111111111 /* Home */ = {isa = PBXGroup; children = (A21111111111111111111112 /* HomeView.swift */, A21111111111111111111113 /* HomeViewModel.swift */, ); path = Home; sourceTree = "<group>"; };
 		A81111111111111111111111 /* Models */ = {isa = PBXGroup; children = (A21111111111111111111114 /* RoadBookEntry.swift */, ); path = Models; sourceTree = "<group>"; };
+		A12111111111111111111111 /* Services */ = {isa = PBXGroup; children = (A21111111111111111111117 /* NavigationLauncher.swift */, A21111111111111111111118 /* WazeLauncher.swift */, ); path = Services; sourceTree = "<group>"; };
 		A51111111111111111111111 /* Products */ = {isa = PBXGroup; children = (A21111111111111111111115 /* RoadBookMoto.app */, ); name = Products; sourceTree = "<group>"; };
 /* End PBXGroup section */
 
@@ -44,7 +49,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B41111111111111111111111 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A11111111111111111111111 /* RoadBookMotoApp.swift in Sources */, A11111111111111111111112 /* HomeView.swift in Sources */, A11111111111111111111113 /* HomeViewModel.swift in Sources */, A11111111111111111111114 /* RoadBookEntry.swift in Sources */, ); runOnlyForDeploymentPostprocessing = 0; };
+		B41111111111111111111111 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A11111111111111111111111 /* RoadBookMotoApp.swift in Sources */, A11111111111111111111112 /* HomeView.swift in Sources */, A11111111111111111111113 /* HomeViewModel.swift in Sources */, A11111111111111111111114 /* RoadBookEntry.swift in Sources */, A11111111111111111111117 /* NavigationLauncher.swift in Sources */, A11111111111111111111118 /* WazeLauncher.swift in Sources */, ); runOnlyForDeploymentPostprocessing = 0; };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +69,7 @@
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationQueriesSchemes = (waze);
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
@@ -92,6 +98,7 @@
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationQueriesSchemes = (waze);
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
@@ -120,6 +127,7 @@
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationQueriesSchemes = (waze);
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
@@ -148,6 +156,7 @@
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationQueriesSchemes = (waze);
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;

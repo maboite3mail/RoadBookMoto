@@ -8,10 +8,15 @@ struct HomeView: View {
     }
 
     var body: some View {
-        VStack {
+        VStack(spacing: 24) {
             Text(viewModel.title)
                 .font(.largeTitle.weight(.semibold))
                 .foregroundStyle(.primary)
+
+            Button("Ouvrir Waze") {
+                viewModel.openTestWaypoint()
+            }
+            .buttonStyle(.borderedProminent)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(.systemBackground))
