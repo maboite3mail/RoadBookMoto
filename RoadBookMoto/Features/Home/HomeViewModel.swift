@@ -6,13 +6,16 @@ final class HomeViewModel {
     let title = "RoadBook Moto"
     private let navigationLauncher: NavigationLauncher
     private let appLifecycleObserver: AppLifecycleObserving
+    private let locationMonitoring: LocationMonitoring
 
     init(
         navigationLauncher: NavigationLauncher = WazeLauncher(),
-        appLifecycleObserver: AppLifecycleObserving = AppLifecycleObserver()
+        appLifecycleObserver: AppLifecycleObserving = AppLifecycleObserver(),
+        locationMonitoring: LocationMonitoring = LocationMonitor()
     ) {
         self.navigationLauncher = navigationLauncher
         self.appLifecycleObserver = appLifecycleObserver
+        self.locationMonitoring = locationMonitoring
     }
 
     func openTestWaypoint() {
@@ -21,5 +24,9 @@ final class HomeViewModel {
 
     func scenePhaseDidChange(_ phase: ScenePhase) {
         appLifecycleObserver.scenePhaseDidChange(phase)
+    }
+
+    func startLocationMonitoring() {
+        locationMonitoring.startMonitoring()
     }
 }

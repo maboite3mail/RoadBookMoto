@@ -21,6 +21,9 @@ struct HomeView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(.systemBackground))
+        .task {
+            viewModel.startLocationMonitoring()
+        }
         .onChange(of: scenePhase) { _, newPhase in
             viewModel.scenePhaseDidChange(newPhase)
         }
